@@ -3,7 +3,7 @@
 import 'package:amazon_clone/common/widgets/custom_textfield.dart';
 import 'package:amazon_clone/common/widgets/custome_button.dart';
 import 'package:amazon_clone/constants/global_variables.dart';
-import 'package:amazon_clone/features/services/auth_service.dart';
+import '../services/auth_service.dart';
 import 'package:flutter/material.dart';
 
 enum Auth {
