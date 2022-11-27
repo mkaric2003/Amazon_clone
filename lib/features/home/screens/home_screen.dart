@@ -1,4 +1,4 @@
-// ignore_for_file: unused_local_variable, prefer_const_literals_to_create_immutables, prefer_const_constructors
+// ignore_for_file: unused_local_variable, prefer_const_literals_to_create_immutables, prefer_const_constructors, unused_import
 
 import 'package:amazon_clone/features/home/widgets/address_box.dart';
 import 'package:amazon_clone/features/home/widgets/carousel_image.dart';
