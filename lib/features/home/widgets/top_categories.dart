@@ -1,3 +1,5 @@
+// ignore_for_file: unnecessary_import, sized_box_for_whitespace
+
 import 'dart:ui';
 
 import 'package:amazon_clone/constants/global_variables.dart';

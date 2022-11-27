@@ -1,6 +1,7 @@
 // ignore_for_file: unnecessary_import
 
 import 'package:amazon_clone/common/widgets/bottom_bar.dart';
+import 'package:amazon_clone/features/admin/screens/add_product_screen.dart';
 import 'package:amazon_clone/features/auth/screens/auth_screen.dart';
 import 'package:amazon_clone/features/home/screens/home_screen.dart';
 import 'package:flutter/cupertino.dart';
@@ -19,6 +20,10 @@ Route<dynamic> generateRoute(RouteSettings routeSettings) {
     case BottomBar.routeName:
       return MaterialPageRoute(
         builder: (_) => const BottomBar(),
+      );
+    case AddProductScreen.routeName:
+      return MaterialPageRoute(
+        builder: (_) => const AddProductScreen(),
       );
     default:
       return MaterialPageRoute(
