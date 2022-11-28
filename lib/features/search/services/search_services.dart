@@ -11,7 +11,7 @@ import '../../../constants/global_variables.dart';
 import '../../../constants/utils.dart';
 
 class SearchServices {
-  /* Future<List<Product>> fetchSearchedProducts({
+  Future<List<Product>> fetchSearchedProducts({
     required BuildContext context,
     required String searchQuery,
   }) async {
@@ -43,5 +43,5 @@ class SearchServices {
       showSnackBar(context, e.toString());
     }
     return productList;
-  }*/
+  }
 }
