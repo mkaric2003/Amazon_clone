@@ -1,9 +1,10 @@
 //IMPORT FROM PACKAGES
 const express = require('express'); //import 'package:express/express.dart'
 const mongoose = require('mongoose');
-const adminRouter = require('./routes/admin');
 //IMPORT FROM OTHER FILES
+const adminRouter = require('./routes/admin');
 const authRouter = require('./routes/auth');
+const productRouter = require('./routes/product');
 //INIT
 const PORT = 3000;
 const app = express();
@@ -12,6 +13,7 @@ const DB = 'mongodb+srv://mirza:mirzamsts2003k@cluster0.df7whxe.mongodb.net/?ret
 app.use(express.json());
 app.use(authRouter);
 app.use(adminRouter);
+app.use(productRouter);
 
 //connections
 mongoose.connect(DB)
