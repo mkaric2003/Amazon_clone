@@ -58,9 +58,9 @@ class _DealOfDayState extends State<DealOfDay> {
                     Container(
                       padding: const EdgeInsets.only(left: 15),
                       alignment: Alignment.topLeft,
-                      child: const Text(
-                        '\$1000',
-                        style: TextStyle(
+                      child: Text(
+                        '\$${product!.price}',
+                        style: const TextStyle(
                           fontSize: 18,
                         ),
                       ),

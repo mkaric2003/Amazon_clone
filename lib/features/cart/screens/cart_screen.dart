@@ -1,5 +1,7 @@
 import 'package:amazon_clone/common/widgets/custome_button.dart';
 import 'package:amazon_clone/constants/global_variables.dart';
+import 'package:amazon_clone/features/address/screens/address_screen.dart';
+import 'package:amazon_clone/features/admin/screens/add_product_screen.dart';
 import 'package:amazon_clone/features/cart/widgets/cart_product.dart';
 import 'package:amazon_clone/features/cart/widgets/cart_subtotal.dart';
 import 'package:amazon_clone/features/home/widgets/address_box.dart';
@@ -20,6 +22,10 @@ class CartScreen extends StatefulWidget {
 class _CartScreenState extends State<CartScreen> {
   void navigateToSearchScreen(String query) {
     Navigator.of(context).pushNamed(SearchScreen.routeName, arguments: query);
+  }
+
+  void navigateToAddress() {
+    Navigator.of(context).pushNamed(AddressScreen.routeName);
   }
 
   @override
@@ -104,7 +110,7 @@ class _CartScreenState extends State<CartScreen> {
             const CartSubtotal(),
             CustomeButton(
               text: 'Proced to Buy (${user.cart.length} items)',
-              onTap: () {},
+              onTap: navigateToAddress,
               color: Colors.yellow[600],
             ),
             const SizedBox(height: 15),
